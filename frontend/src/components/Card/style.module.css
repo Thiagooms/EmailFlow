@@ -1,0 +1,142 @@
+.card{
+    width: 39.188rem;
+    height: 23.5rem;
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 0.938rem;
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+}
+
+header{
+    display: flex;
+    gap: 0.313rem;
+    height: 3.2rem;
+    margin-top: 1.625rem;
+    margin-left: 1.875rem;
+}
+
+.dot{
+  width: 0.75rem;
+  height: 0.75rem;
+  border-radius: 50%;
+}
+
+.red {
+  background-color: #ff5f57;
+}
+.yellow {
+  background-color: #ffbd2e;
+}
+.green {
+  background-color: #28c840;
+}
+
+.carddiv{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.cardtext{
+    font-size: 0.9rem;
+    color: white;
+    font-weight: 100;
+}
+
+.span{
+    font-size: 0.875rem;
+    color: white;
+    font-weight: 600;
+    margin-bottom: 2.25rem;
+}
+
+.cardinfo{
+    display: flex;
+    flex-direction: column;
+    gap: 0.938rem;
+    
+}
+
+.productivecard{
+
+display: flex;
+flex-direction: column;
+margin-left: 2.25rem;
+margin-right: 2.563rem;
+width: 34.75rem;
+height: 4.375rem;
+background-color: #171717;
+border-radius: 0.625rem;
+border: 0.031rem solid rgba(255, 255, 255, 0.15);
+
+    span{
+        width: 4.688rem;
+        height: 1.5rem;
+        border-radius: 2rem;
+        font-size: 0.5rem;
+        color: #22C55E;
+        border: 0.031rem solid #22C55E26;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 0.625rem;
+        margin-left: 0.625rem;
+    }
+
+    p{
+        font-size: 0.75rem;
+        color: white;
+        margin-top: 0.25rem;
+        margin-left: 10.625rem;
+        margin-right: 2.563rem;
+        height: 100%;
+        align-self: center;
+        font-weight: 200;
+    }
+
+}
+
+.unproductivecard{
+
+    display: flex;
+    flex-direction: column;
+    margin-left: 2.25rem;
+    margin-right: 2.563rem;
+    width: 34.75rem;
+    height: 4.375rem;
+    background-color: #171717;
+    border-radius: 0.625rem;
+    border: 0.031rem solid rgba(255, 255, 255, 0.15);
+
+        span{
+        width: 4.688rem;
+        height: 1.5rem;
+        border-radius: 2rem;
+        font-size: 0.5rem;
+        color: #EF4444;
+        border: 0.031rem solid #EF444426;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 0.625rem;
+        margin-left: 0.625rem;
+    }
+
+    p{
+        font-size: 0.75rem;
+        color: white;
+        margin-top: 0.25rem;
+        margin-left: 10.625rem;
+        margin-right: 2.563rem;
+        height: 100%;
+        text-align: end;
+        font-weight: 200;
+    }
+
+}
+
+
+
