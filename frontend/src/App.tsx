@@ -1,8 +1,7 @@
-import './index.css';
-import { Footer } from './components/Footer';
 import './App.css';
-import { Card } from './components/Card';
 import { HowItWorks } from './components/HowItWorks';
+import { Footer } from './components/Footer';
+import { Card } from './components/Card';
 import { AnalyzeEmail } from './components/AnalyzeEmail';
 
 function App() {
