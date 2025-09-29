@@ -1,0 +1,236 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 5.125rem;
+    color: #fff;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+.head {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 2.188rem;
+  width: 100%;
+  padding: 0 1rem;
+    margin-bottom: 3.125rem;
+}
+
+.head p {
+  padding: 0.25rem 1.188rem;
+  font-size: 0.688rem;
+  border-radius: 2rem;
+  border: 0.5px solid rgba(255, 255, 255, 0.264);
+  color: white;
+  font-weight: 300;
+  font-family: "Space Grotesk", sans-serif;
+  text-align: center;
+}
+
+.body{
+    display: flex;
+    justify-content: center;
+    gap: 3.125rem;
+    width: 100%;
+    max-width: 50rem;
+}
+
+.sendemail{
+    width: 25.438rem;
+    height: 29rem;
+    min-height: 25.938rem;
+    padding: 2rem 1.5rem 2rem 1.5rem;
+    box-sizing: border-box;
+    border-radius: 0.938rem;
+    background: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(3px);
+    -webkit-backdrop-filter: blur(15px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    overflow: hidden;
+}
+
+.formTitle {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-weight: 800;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 0.0625rem;
+    margin-top: 0;
+    margin-bottom: 2.5rem;
+    color: white
+}
+
+.formGroup {
+    margin-bottom: 0;
+}
+
+.label {
+    display: block;
+    font-size: 0.875rem;
+    font-weight: 500;
+    margin-bottom: 0.375rem;
+}
+
+.input {
+    width: 20rem;
+    height: 2.0625rem;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 0.5rem;
+    padding: 0 0.625rem;
+    color: #fff;
+    font-size: 0.8rem;
+    font-weight: 200;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    box-sizing: border-box;
+}
+
+.formGroup:nth-of-type(2) .label {
+    margin-top: 1.25rem;
+}
+
+.textarea {
+    width: 20rem;
+    height: 9.0625rem;
+    resize: none;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 0.5rem;
+    padding: 0.625rem;
+    color: #fff;
+    font-size: 0.8rem;
+    box-sizing: border-box;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+.charCounter {
+    font-size: 0.6rem;
+    color: rgba(255, 255, 255, 0.6);
+    text-align: left;
+    margin-top: 0.3125rem;
+    margin-bottom: 0;
+}
+
+.formActions {
+    display: flex;
+    gap: 0.625rem;
+    margin-top: 2rem;
+}
+
+.classifyButton, .clearButton {
+    height: 2.5rem;
+    padding: 0 1rem;
+    border-radius: 2rem;
+    cursor: pointer;
+    font-size: 0.9375rem;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.classifyButton {
+    background: #ff3c00;
+    color: #fff;
+    border: none;
+}
+
+.iconArrow {
+    margin-left: 0.5rem;
+    font-size: 1.125rem;
+    transform: rotate(-45deg);
+}
+
+.clearButton {
+    background: transparent;
+    color: #fff;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.analyzeemail{
+    width: 25.438rem;
+    height: 29rem;
+    min-height: 25.938rem;
+    padding: 2rem 1.5rem 2rem 1.5rem;
+    box-sizing: border-box;
+    border-radius: 0.938rem;
+    background: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(3px);
+    -webkit-backdrop-filter: blur(15px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.classificationContent {
+    padding: 2rem;
+}
+
+.mailIcon {
+    font-size: 4rem;
+    line-height: 1;
+    color: rgb(255, 255, 255);
+    margin-bottom: 1.25rem;
+}
+
+.statusStrong {
+    display: block;
+    font-weight: bold;
+    color: #fff;
+    font-size: 1rem;
+}
+
+.statusText {
+    font-size: 0.6rem;
+    line-height: 1.4;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+@media (max-width: 53.125rem) {
+    .body {
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+        padding: 0 1rem;
+    }
+
+    .sendemail,
+    .analyzeemail {
+        width: 100%;
+        max-width: 25.438rem;
+        height: auto; 
+        min-height: 15rem;
+    }
+
+    .input,
+    .textarea {
+        width: 100%;
+    }
+
+    .container {
+        padding-bottom: 3.125rem;
+    }
+}
+
+@media (max-width: 28.125rem) {
+    .sendemail,
+    .analyzeemail {
+        padding: 1.5rem 1rem;
+    }
+
+    .formTitle {
+        margin-bottom: 1.5rem;
+    }
+    .formActions {
+        flex-direction: column;
+    }
+
+    .classifyButton, .clearButton {
+        width: 100%;
+    }
+}

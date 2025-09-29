@@ -3,6 +3,7 @@ import { Footer } from './components/Footer';
 import './App.css';
 import { Card } from './components/Card';
 import { HowItWorks } from './components/HowItWorks';
+import { AnalyzeEmail } from './components/AnalyzeEmail';
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
         </div>
       </section>
       <HowItWorks />
+      <AnalyzeEmail />
       <Footer />
     </div>
   );
