@@ -1,31 +1,5 @@
 .app {
-  margin: 0 auto;
-  width: 100%;
-  min-height: 100vh;
-  background: linear-gradient(135deg, 
-    #0f0f23 0%, 
-    #1a1a3a 25%, 
-    #2d1b69 50%, 
-    #3a237a 75%, 
-    #1e3a8a 100%
-  );
-  position: relative;
-  overflow-x: hidden;
-  display: flex;
-  flex-direction: column;
-}
-
-.app::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: radial-gradient(ellipse at top right, rgba(255, 107, 53, 0.1) 0%, transparent 50%),
-              radial-gradient(ellipse at bottom left, rgba(34, 197, 94, 0.1) 0%, transparent 50%),
-              radial-gradient(ellipse at center, rgba(59, 130, 246, 0.05) 0%, transparent 70%);
-  pointer-events: none;
+  background-color: rgb(5, 5, 5);
 }
 
 .title{
@@ -34,22 +8,22 @@
   font-family: "Space Grotesk", sans-serif;
   font-size: 3rem;
   text-align: center;
-  margin-top: 9.188rem;
+  margin-top: 3.5rem;
   margin-bottom: 1.438rem;
   font-weight: 500;
   letter-spacing: -0.07em;
 
-  span{
-    background: linear-gradient(90deg, #FB3B02, #A2C824);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    color: transparent;
-    font-family: "Space Grotesk", sans-serif;
-    font-size: 3rem;
-    font-weight: 500;
-    letter-spacing: -0.07em;
-  }
+    span{
+      background: linear-gradient(90deg, #FB3B02, #A2C824);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      color: transparent;
+      font-family: "Space Grotesk", sans-serif;
+      font-size: 3rem;
+      font-weight: 500;
+      letter-spacing: -0.07em;
+    }
 
 }
 
@@ -57,61 +31,55 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 34.375rem;
 }
 
-.btn-container{
+.btn-container {
   display: flex;
-  margin-top: 3.875rem;
-  gap: 1.125rem;
-
+  margin-top: 3.29rem;
+  gap: 0.95rem;
 }
 
-.cta-button{
+.cta-button {
   display: flex;
   cursor: pointer;
   flex-direction: row;
   align-items: center;
   height: 2.938rem;
-  width: 14.531rem;
-  border-radius: 1.563rem;
-  border: solid 0.094rem white;
-  background-color: transparent;
+  width: 12.35rem;
+  border-radius: 2rem;
+  border: 0.5px solid rgba(255, 255, 255, 0.431);
+  background-color: #ff3c00;
   color: white;
-
-    p{
-      margin-left: 1.813rem;
-      cursor: pointer;
-      font-weight: 600;
-    }
-
-    span{
-      position: absolute;
-      background-color: white;
-      border-radius: 100%;
-      height: 2.456rem;
-      width: 2.456rem;
-      cursor: pointer;
-      transform: translate(11.75rem);
-    }
-
-    .arrow-container {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-
-    .arrow-icon {
-      transform: translate(0.090rem);
-    }
-
-    path{
-      fill: black;
-    }
-
+  position: relative;
+  box-sizing: border-box;
 }
 
-.btn-second{
+.cta-button p {
+  margin-left: 1.54rem;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 0.9rem;
+}
+
+.cta-button span {
+  position: absolute;
+  right: 0.18rem;
+  transform: translateY(0.5px);
+  background-color: white;
+  border-radius: 100%;
+  height: 2.5rem;
+  width: 2.5rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cta-button .arrow-icon path {
+  fill: #FB3B02;
+}
+
+.btn-second {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -119,12 +87,12 @@
   height: 2.938rem;
   width: 7.5rem;
   border-radius: 1.563rem;
-  border: solid 0.094rem white;
+  border: 0.5px solid rgba(255, 255, 255, 0.264);
   background-color: transparent;
   color: white;
+}
 
-  p{
-    font-weight: 200;
-  }
-
+.btn-second p {
+  font-weight: 200;
+  font-size: 0.85rem;
 }

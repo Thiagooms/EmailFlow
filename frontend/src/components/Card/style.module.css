@@ -3,18 +3,18 @@
     height: 23.5rem;
     background: rgba(0, 0, 0, 0.3);
     border-radius: 0.938rem;
-    backdrop-filter: blur(15px);
+    backdrop-filter: blur(3px);
     -webkit-backdrop-filter: blur(15px);
     border: 1px solid rgba(255, 255, 255, 0.2);
-    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+    margin: 0 auto; 
 }
 
 header{
     display: flex;
     gap: 0.313rem;
     height: 3.2rem;
-    margin-top: 1.625rem;
-    margin-left: 1.875rem;
+    padding-top: 1.625rem;
+    padding-left: 1.875rem;
 }
 
 .dot{
@@ -38,18 +38,22 @@ header{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 0 1.5rem;
+    margin-top: 1rem;
 }
 
 .cardtext{
     font-size: 0.9rem;
     color: white;
     font-weight: 100;
+    text-align: center;
 }
 
 .span{
     font-size: 0.875rem;
     color: white;
     font-weight: 600;
+    margin-top: 0.5rem;
     margin-bottom: 2.25rem;
 }
 
@@ -57,86 +61,86 @@ header{
     display: flex;
     flex-direction: column;
     gap: 0.938rem;
-    
+    padding: 0 2.25rem;
 }
 
-.productivecard{
-
-display: flex;
-flex-direction: column;
-margin-left: 2.25rem;
-margin-right: 2.563rem;
-width: 34.75rem;
-height: 4.375rem;
-background-color: #171717;
-border-radius: 0.625rem;
-border: 0.031rem solid rgba(255, 255, 255, 0.15);
-
-    span{
-        width: 4.688rem;
-        height: 1.5rem;
-        border-radius: 2rem;
-        font-size: 0.5rem;
-        color: #22C55E;
-        border: 0.031rem solid #22C55E26;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        margin-top: 0.625rem;
-        margin-left: 0.625rem;
-    }
-
-    p{
-        font-size: 0.75rem;
-        color: white;
-        margin-top: 0.25rem;
-        margin-left: 10.625rem;
-        margin-right: 2.563rem;
-        height: 100%;
-        align-self: center;
-        font-weight: 200;
-    }
-
-}
-
-.unproductivecard{
-
+.productivecard, .unproductivecard {
     display: flex;
-    flex-direction: column;
-    margin-left: 2.25rem;
-    margin-right: 2.563rem;
-    width: 34.75rem;
+    align-items: center;
+    gap: 1rem;
+    padding: 0 0.75rem;
+    width: 100%;
     height: 4.375rem;
-    background-color: #171717;
+    background-color: #17171726;
     border-radius: 0.625rem;
     border: 0.031rem solid rgba(255, 255, 255, 0.15);
-
-        span{
-        width: 4.688rem;
-        height: 1.5rem;
-        border-radius: 2rem;
-        font-size: 0.5rem;
-        color: #EF4444;
-        border: 0.031rem solid #EF444426;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-top: 0.625rem;
-        margin-left: 0.625rem;
-    }
-
-    p{
-        font-size: 0.75rem;
-        color: white;
-        margin-top: 0.25rem;
-        margin-left: 10.625rem;
-        margin-right: 2.563rem;
-        height: 100%;
-        text-align: end;
-        font-weight: 200;
-    }
-
 }
 
+.productivecard span, .unproductivecard span {
+    flex-shrink: 0;
+    height: 1.5rem;
+    border-radius: 2rem;
+    font-size: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 0.75rem;
+}
 
+.productivecard span {
+    color: #22C55E;
+    border: 0.031rem solid #22C55E26;
+}
 
+.unproductivecard span {
+    color: #EF4444;
+    border: 0.031rem solid #EF444426;
+}
+
+.productivecard p, .unproductivecard p {
+    font-size: 0.75rem;
+    color: white;
+    font-weight: 200;
+    margin: 0;
+}
+
+@media (max-width: 768px) {
+    .card {
+        width: 90vw;
+        max-width: 39.188rem; 
+        height: auto;
+        padding-bottom: 2rem;
+    }
+
+    .cardinfo {
+        padding: 0 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        padding-left: 1rem;
+    }
+
+    .cardtext {
+        font-size: 0.8rem;
+    }
+
+    .span {
+        font-size: 0.8rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .productivecard, .unproductivecard {
+        flex-direction: column;
+        height: auto;
+        padding: 0.75rem;
+        gap: 0.5rem;
+        align-items: flex-start;
+    }
+    
+    .productivecard p, .unproductivecard p {
+        font-size: 0.7rem;
+        width: 100%;
+    }
+}

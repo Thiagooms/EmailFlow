@@ -2,12 +2,13 @@ import './index.css';
 import { Footer } from './components/Footer';
 import './App.css';
 import { Card } from './components/Card';
+import { HowItWorks } from './components/HowItWorks';
 
 function App() {
   return (
     <div className='app'>
-      <h1 className='title'>Classifique seus emails<br/> com<span> inteligência artificial</span></h1>
       <section className='hero'>
+        <h1 className='title'>Classifique seus emails<br/> com<span> inteligência artificial</span></h1>
         <Card />
         <div className='btn-container'>
           <button className='cta-button'>
@@ -23,8 +24,7 @@ function App() {
           </button>
         </div>
       </section>
-      <section></section>
-      
+      <HowItWorks />
       <Footer />
     </div>
   );
