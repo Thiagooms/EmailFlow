@@ -11,7 +11,12 @@ function App() {
         <h1 className='title'>Classifique seus emails<br/> com<span> inteligência artificial</span></h1>
         <Card />
         <div className='btn-container'>
-          <button className='cta-button'>
+          <button
+            className='cta-button'
+            onClick={() => {
+              document.getElementById('analyzeemail')?.scrollIntoView({ behavior: 'smooth' });
+            }}
+          >
             <p>Comece agora</p>
             <span className='arrow-container'>
               <svg className='arrow-icon' width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -19,13 +24,25 @@ function App() {
               </svg>
             </span>
           </button>
-          <button className='btn-second'>
+          <button
+            className='btn-second'
+            onClick={() => {
+              const el = document.getElementById('howitworks');
+              if (el) {
+                el.scrollIntoView({ behavior: 'smooth', block: 'center' });
+              }
+            }}
+          >
             <p>Saiba mais</p>
           </button>
         </div>
       </section>
-      <HowItWorks />
-      <AnalyzeEmail />
+      <section id="howitworks">
+        <HowItWorks />
+      </section>
+      <section id="analyzeemail">
+        <AnalyzeEmail />
+      </section>
       <Footer />
     </div>
   );

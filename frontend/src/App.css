@@ -35,8 +35,10 @@
 
 .btn-container {
   display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.2rem; /* aumenta o espaçamento entre os botões */
   margin-top: 3.29rem;
-  gap: 0.95rem;
 }
 
 .cta-button {
