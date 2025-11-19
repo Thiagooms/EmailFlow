@@ -1,7 +1,7 @@
 import type { ResultData } from "../types/ResultData";
 
 export async function analyzeEmail(fullEmailText: string): Promise<ResultData> {
-  const response = await fetch("http://54.207.153.148:5000/api/analyze", {
+  const response = await fetch("https://emailflow-1.onrender.com/api/analyze", {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify({ text: fullEmailText }),
