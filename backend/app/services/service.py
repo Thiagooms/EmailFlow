@@ -9,7 +9,7 @@ load_dotenv()
 api_key = os.getenv("GEMINI_API_KEY")
 genai.configure(api_key=api_key)
 
-nlp = spacy.load("pt_core_news_lg")
+nlp = spacy.load("pt_core_news_md")
 
 def data_processing(text: str) -> str:
 
@@ -23,6 +23,8 @@ def data_processing(text: str) -> str:
     return " ".join(clean_tokens)
 
 def sort_email(text: str) -> dict:
+
+    processed_text = data_processing(text)
 
     prompt = """
     
@@ -74,7 +76,7 @@ def sort_email(text: str) -> dict:
     model_name = os.getenv("GEMINI_MODEL", "gemini-2.5-flash")
     model = genai.GenerativeModel(model_name)
 
-    full_prompt = f"{prompt}\n\nEmail para análise:\n---\n{text}\n---"
+    full_prompt = f"{prompt}\n\nEmail para análise:\n---\n{processed_text}\n---"
 
     try:
         response = model.generate_content(full_prompt)
