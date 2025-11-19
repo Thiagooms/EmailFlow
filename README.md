@@ -19,7 +19,7 @@
 
 Acesse a versão de produção da aplicação que está rodando em nosso servidor na AWS:
 
-**[http://54.207.153.148/](http://54.207.153.148/)**
+**https://email-flow-uylt.vercel.app/**
 
 ---
 
